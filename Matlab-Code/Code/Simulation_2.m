@@ -111,7 +111,7 @@ for id_f=1:length(f)
     legend('Traditioanl: Wrapped Phase','Groundthruth: Wrapped Phase');  
     Wrapped_phase_all(:,:,id_f)=Wrapped_phase;
 end
-%%% 3) Phase unwrapping
+%%% 2) Phase unwrapping
 phi_low_frequency=Wrapped_phase_all(:,:,1);
 for id_f=2:length(f)
     phi_high_frequency=Wrapped_phase_all(:,:,id_f);
