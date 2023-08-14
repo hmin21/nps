@@ -10,17 +10,23 @@ Simulation_2.m: This file compares the traditional phase-shifting method and the
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-**Example 2: Real Experiment**
+**Example 2: The generation of projection patterns loaded to MEMS-based projectors**
 
-The captured camera images has been upload into "Data" folk . Please deirectly run the "Method_Comparison.m" to show the result.
+Traditional_Projection.m: This file is used to generate the projection pattern required for the traditional projection method;
 
-Method_Comparison.m: This file compares the fundamental frequency phase errors of the two strategies based on three, four, and five step phase shift method.
+Proposed_Projection.m: This file is used to generate the projection pattern required for the proposed projection method;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-**Example 3: The Data of laser voltage used in FPGA**
+**Example 3: Real Experiment**
 
-Traditional_Projection.m: This file is used to generate the laser voltage required for traditional projection method;
+The projection patterns have been superimposed to a camera image by one exposure of camera.
 
-Proposed_Projection.m: This file is used to generate the laser voltage required for the proposed projection method;
+The supermposed camera images have been uploaded into the "Image" folder. Please directly run the "Method_Comparison.m" or "Method_Compare_on_Complex_Surface.m" to solve the phase based on these superimposed images.
+
+Method_Comparison.m:  This file compares the proposed 3-step, 4-step, 5-step methods with the traditional 3-step, 4-step, 5-step methods on a standard plane. The phase error of the unit-frequency fringe is used as the evaluation indicator, and the traditional 12-step method is used to obtain the Groundtruth of phases.
+
+Method_Compare_on_Complex_Surface.m: This file compares the proposed 3-step methods with the traditional 3-step methods on a complex surface.
+
+
 
